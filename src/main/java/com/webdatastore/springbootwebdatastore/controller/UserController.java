@@ -47,6 +47,7 @@ public class UserController {
         updateUserDetails.setUserName(userDetails.getUserName());
         updateUserDetails.setPhoneNumber(userDetails.getPhoneNumber());
         updateUserDetails.setPassword(userDetails.getPassword());
+        updateUserDetails.setAdmin(userDetails.isAdmin());
 
         userRepository.save(updateUserDetails);
 

@@ -29,5 +29,7 @@ public class User {
     @GeneratedValue(generator = "UUID")
     private java.util.UUID userId;
     private String password;
+    @Column(name = "isAdmin")
+    private boolean isAdmin;
 
 }
