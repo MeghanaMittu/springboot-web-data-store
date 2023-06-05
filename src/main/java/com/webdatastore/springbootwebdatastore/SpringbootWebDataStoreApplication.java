@@ -1,6 +1,7 @@
 package com.webdatastore.springbootwebdatastore;
 
 import com.webdatastore.springbootwebdatastore.model.User;
+import com.webdatastore.springbootwebdatastore.repository.SessionRepository;
 import com.webdatastore.springbootwebdatastore.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -17,19 +18,12 @@ public class SpringbootWebDataStoreApplication implements CommandLineRunner {
 	@Autowired
 	public UserRepository userRepository;
 
+	@Autowired
+	public SessionRepository sessionRepository;
+
 	@Override
 	public void run(String... args) throws Exception {
-		User user = new User();
-		user.setUserName("Meghana9");
-		user.setPassword("12345678");
-		user.setEmail("meghanakanneganti@gmail.com");
-		user.setPhoneNumber("9267853750");
 
-		User user1 = new User();
-		user1.setUserName("maggi");
-		user1.setPassword("12345678");
-		user1.setEmail("maggi@gmail.com");
-		user1.setPhoneNumber("9267245020");
 	}
 }
 
